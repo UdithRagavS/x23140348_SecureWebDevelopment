@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Books</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h2>Books</h2>
+    <table id="booksTable">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Books will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <h3>Add a New Book</h3>
+    <form id="addBookForm">
+        <label for="newTitle">Title:</label>
+        <input type="text" id="newTitle" name="newTitle" required>
+        <label for="newAuthor">Author:</label>
+        <input type="text" id="newAuthor" name="newAuthor" required>
+        <label for="newDescription">Description:</label>
+        <textarea id="newDescription" name="newDescription"></textarea>
+        <button type="submit">Add Book</button>
+    </form>
+
+    <!-- Modal for updating a book -->
+    <div id="updateBookModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Update Book</h3>
+            <form id="updateBookForm">
+                <input type="hidden" id="bookId" name="bookId">
+                <label for="updateTitle">Title:</label>
+                <input type="text" id="updateTitle" name="updateTitle" required>
+                <label for="updateAuthor">Author:</label>
+                <input type="text" id="updateAuthor" name="updateAuthor" required>
+                <label for="updateDescription">Description:</label>
+                <textarea id="updateDescription" name="updateDescription"></textarea>
+                <button type="submit">Update Book</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="adminbooks.js"></script>
+</body>
+</html>

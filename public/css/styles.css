@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(244, 244, 244, 0.649); 
+    background-image: url('../public/images/library.jpg'); 
+    background-blend-mode: multiply; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 50px;
+}
+
+
+#loginForm {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#loginForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+    width: 100%;
+    padding: 20x;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#loginForm button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#loginForm button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Register Button Styles */
+#registerButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#registerButton:hover {
+    background-color: #5a6268;
+}
+
+/* Error Message Styles */
+#loginError {
+    text-align: center;
+    margin-top: 20px;
+}
+#registerForm {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#registerForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#registerForm input[type="text"],
+#registerForm input[type="password"],
+#registerForm select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#registerForm button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#registerForm button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Error Message Styles */
+#registerError {
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+}
+#booksTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+#booksTable th, #booksTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#booksTable th {
+    background-color: #d13232a6;
+    color: black;
+}
+
+#booksTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#booksTable tr:hover {
+    background-color: #ddd;
+}
+#logoutButton{
+    display: inline-block; /* Allows the button to sit next to other elements */
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 16px; /* Font size */
+    border: none; /* No border */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center the text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#logoutButton:hover {
+    background-color: #0056b3; /* Darker shade of blue */
+}
